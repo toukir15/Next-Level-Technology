@@ -30,5 +30,26 @@
         age: 21,
         role: 1,
     }
+
+    // type and interface with array 
+    type Array1 = number[]
+    interface Array2 {
+        [index: number]: number
+    }
+    const array1: Array1 = [1, 2, 3]
+    const array2: Array2 = [1, 2, 3]
+
+    // type and interface with function 
+    type Add = (value: number) => number
+    interface Remove {
+        (value: number): number
+    }
+    const add: Add = (value) => {
+        return value
+    }
+    const remove: Remove = (value) => {
+        return value
+    }
+
     //
 }
